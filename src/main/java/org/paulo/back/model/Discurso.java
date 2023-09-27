@@ -4,9 +4,13 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Discurso {
-    private Long id;
-    private String nome;
-    private String congregacao;
-    private LocalDate data;
-    private List<Discurso_Orador> discursos;
+    private Integer numero;
+    private String tema;
+    private LocalDate ultimaData;
+    private List<Discurso_Orador> oradores;
+
+    public Discurso(Integer numero, String tema) {
+        this.numero = numero;
+        this.tema = tema;
+    }
 }
